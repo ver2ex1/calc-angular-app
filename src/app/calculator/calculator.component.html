@@ -1,0 +1,15 @@
+<div class="calculator-wrapper">
+  <div class="calculator-display">
+    <span class="calculator-displayedValue">{{ displayedValue }}</span>
+  </div>
+  <div class="calculator-buttons-wrapper">
+    @for (button of buttons; track button.label;) {
+    <div
+      class="calculator-button {{ button.class }}"
+      (click)="handleButtonClick(button.action, button.label)"
+    >
+      {{ button.label }}
+    </div>
+    }
+  </div>
+</div>
