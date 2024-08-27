@@ -6,6 +6,9 @@
     @for (button of buttons; track button.label;) {
     <div
       class="calculator-button {{ button.class }}"
+      [ngClass]="{
+        active: lastOperator === button.operatorName && operatorInProgress
+      }"
       (click)="handleButtonClick(button.action, button.label)"
     >
       {{ button.label }}

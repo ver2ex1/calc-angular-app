@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { BUTTONS } from './calculator.constants';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-calculator',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './calculator.component.html',
   styleUrl: './calculator.component.css',
 })

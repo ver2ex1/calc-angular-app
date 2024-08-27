@@ -55,7 +55,8 @@
   background: #f39c12;
 }
 
-.operation-button:hover {
+.operation-button:hover,
+.operation-button.active {
   background: #ffb800;
 }
 
